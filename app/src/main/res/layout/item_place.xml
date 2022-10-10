@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      "소재지": "인천광역시 남동구 간석로72번길 45-30, 1층 일부호 (간석동)",
+      "업체명": "나우커피 간석 LH점",
+      "연번": 1   -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_place_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_item_place"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ic_coffee"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coffee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/chungbuk_uni"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/ic_coffee"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="번호 : 1" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/chungbuk_uni"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/ic_coffee"
+            app:layout_constraintTop_toBottomOf="@id/tv_index"
+            tools:text="소재지 : 인천광역시 남동구 간석로72번길 45-30, 1층 일부호 (간석동)" />
+
+        <TextView
+            android:id="@+id/tv_place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/chungbuk_uni"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/ic_coffee"
+            app:layout_constraintTop_toBottomOf="@id/tv_address"
+            tools:text="업체명 : 나우커피 간석 LH점" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
